@@ -20,7 +20,7 @@
 </div>
 </div>
 
-js
+
 
 layui.use(['select', 'jquery'], function (select, $) {
    //data为要渲染的下拉数据，select1为要渲染的元素
@@ -29,4 +29,4 @@ layui.use(['select', 'jquery'], function (select, $) {
     //getSelectData获取选中的数据
     select.getSelectData('select1');
 });
-#
+

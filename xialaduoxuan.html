@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉多选搜索</title>
+    <link rel="stylesheet" href="xialaduoxuan.css" />
+    <script src='./layui/layui.js'></script>
+</head>
+
+<body>
+    <div>
+        <label for="" class="xiala">下拉多选</label>
+        <div class="lay-select">
+            <div class="insert-select">
+                <ul class="select1"></ul>
+            </div>
+            <i class="down"></i>
+            <div class="down-li">
+                <ul>
+                    <li>
+                        <input type="text" placeholder="搜索" class="search-or-new" />
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var data = [{
+            id: '001',
+            value: 'aaa'
+        }, {
+            id: '002',
+            value: 'bbb'
+        }, {
+            id: '003',
+            value: 'vccc'
+        }, {
+            id: '004',
+            value: 'vvv'
+        }]
+        layui.extend({
+            'select': 'xialaduoxuan'
+        });
+        layui.use(['select', 'jquery'], function (select, $) {
+            select.init(data, 'select1');
+            $(".dainji").on('click', function () {
+                select.getSelectData('select1');
+            })
+        });
+    </script>
+</body>
+
+</html>

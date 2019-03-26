@@ -3,7 +3,7 @@
 基于layui的下拉多选，可搜索，兼容IE
 使用方法
 
-<div>
+ <div>
     
     <label for="" class="xiala">下拉多选</label>
     
@@ -31,9 +31,9 @@
     
     </div>
 
-</div>
+  </div>
 
-</div>
+ </div>
 
 ##layui.use(['select', 'jquery'], function (select, $) {
   

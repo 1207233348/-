@@ -1,8 +1,8 @@
-# -
-下拉多选
-基于layui的下拉多选，可搜索，兼容IE
-使用方法：
-<div>
+# 
+##下拉多选
+##基于layui的下拉多选，可搜索，兼容IE
+##使用方法：
+##<div>
     <label for="" class="xiala">下拉多选</label>
     <div class="lay-select">
         <div class="insert-select">
@@ -16,13 +16,19 @@
             </li>
         </ul>
     </div>
-</div>
-</div>
-layui.use(['select', 'jquery'], function (select, $) {
-   //data为要渲染的下拉数据，select1为要渲染的元素
-    select.init(data, 'select1');
+##</div>
+##</div>
+
+##layui.use(['select', 'jquery'], function (select, $) {
+  
+  //data为要渲染的下拉数据，select1为要渲染的元素
     
-    //getSelectData获取选中的数据
+    select.init(data, 'select1');
+   
+   
+   //getSelectData获取选中的数据
+    
     select.getSelectData('select1');
-});
-- #
+##});
+
+
